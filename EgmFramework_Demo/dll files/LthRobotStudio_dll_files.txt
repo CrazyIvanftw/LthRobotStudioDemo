@@ -1,0 +1,26 @@
+Ok, here's what you need to do to be able to run LthRobotStudio things or to reporduce the demo. 
+I think it's probably better if you download the actual LthRobotStudio repository into a 
+Vistual Studio solution and build these dll files from there, but you might be pressed for time.
+
+1) If nod building from Visual Studio -> These files need to be put into the RobotStudio bin files. 
+From this folder, copy the files:
+
+Google.ProtocolBuffers.dll
+Google.ProtocolBuffers.Serialization.dll
+EgmFramework.dll
+EgmMessgaeProtocols.dll
+
+into the RobotStudio folders: Bin and Bin64
+
+On my machine, the RobotStudio folders were at: 
+C:\Program Files (x86)\ABB Industrial IT\Robotics IT\RobotStudio 6.07\Bin
+C:\Program Files (x86)\ABB Industrial IT\Robotics IT\RobotStudio 6.07\Bin64
+
+
+2) If building from Visual Studio -> Where I found these files on my machine after building the 
+Visual Studio solution 'LthRobotStudio':
+
+C:\Users\<user>\.nuget\packages\google.protocolbuffers\2.4.1.555\tools\Google.ProtocolBuffers.dll
+C:\Users\<user>\.nuget\packages\google.protocolbuffers\2.4.1.555\tools\Google.ProtocolBuffers.Serialization.dll
+C:\Users\<user>\source\repos\LthRobotStudio\EgmFramework\bin\Debug\netstandard2.0\EgmFramework.dll
+C:\Users\<user>\source\repos\LthRobotStudio\EgmFramework\bin\Debug\netstandard2.0\EgmMessgaeProtocols.dll

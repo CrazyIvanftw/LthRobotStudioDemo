@@ -1,0 +1,20 @@
+// Definition of the communication protocol for the EgmLineSensor smart component
+// -Gregory Austin
+package lth.egm;
+
+message Point
+{
+    required double x = 1;
+    required double y = 2;
+    required double z = 3;
+}
+
+message LineSensor
+{
+    required Point sensedPoint = 1;
+    required Point start = 2;
+    required Point end = 3;
+    required double radius = 4;
+    required string sensedPart = 5;
+    required uint32 sensorID = 6;
+}
